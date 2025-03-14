@@ -1,6 +1,6 @@
 name: base_camera # only used for demonstration data api
-root_dir: '/data/opv2v/test'
-validate_dir: '/data/opv2v/test'
+root_dir: '/mnt/e/CoBEVT_stuff/CoBEVT/opv2v/data/opv2v/test'
+validate_dir: '/mnt/e/CoBEVT_stuff/CoBEVT/opv2v/data/opv2v/test'
 
 
 train_params:

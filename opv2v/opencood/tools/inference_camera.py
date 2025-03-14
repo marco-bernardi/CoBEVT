@@ -55,7 +55,7 @@ def main():
     for i, batch_data in enumerate(data_loader):
         print(i)
         with torch.no_grad():
-            torch.cuda.synchronize()
+            #torch.cuda.synchronize()
 
             batch_data = train_utils.to_device(batch_data, device)
             output_dict = model(batch_data['ego'])

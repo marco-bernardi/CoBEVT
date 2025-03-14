@@ -213,10 +213,10 @@ def draw_3d_bbx(image, objects, color=(0, 255, 0), thickness=2):
     image_h = image.shape[0]
     objects_filtered = filter_bbx_out_scope(objects, image_w, image_h)
 
-    rect_corners = np.array(objects_filtered[:, :, :2], dtype=np.int)
+    rect_corners = np.array(objects_filtered[:, :, :2], dtype=int)
 
     for i in range(rect_corners.shape[0]):
-        corners = rect_corners[i].astype(np.int)
+        corners = rect_corners[i].astype(int)
         for start, end in line_indices:
             cv2.line(output_image, (corners[start, 0], corners[start, 1]),
                      (corners[end, 0], corners[end, 1]), color, thickness,
